@@ -131,8 +131,6 @@ Errors:
     body:
       domain: example.com
       status: SEAN's message
-    status_code: 200
-  register: result
   ignore_errors: true
 ```
 
