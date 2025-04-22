@@ -120,7 +120,7 @@ Errors:
 
 ### Ansible POST example
 
-```
+```yaml
 - name: Send POST request to update endpoint
   uri:
     url: http://localhost:58423/update
