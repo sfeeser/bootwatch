@@ -1,8 +1,8 @@
 Below is a README.md file for the Go program, providing an overview, setup instructions, usage examples, and other relevant details to help users understand and run the domain status service.
 markdown
-# Domain Status Service
+# Bootwatch
 
-A lightweight Go-based HTTP server that tracks domain status updates. It listens on port 58423 and provides RESTful endpoints to store and retrieve domain status information. The service stores data in memory, with automatic cleanup of updates older than 48 hours, making it suitable for low-usage scenarios.
+A lightweight Go-based HTTP server that tracks playbook status updates by comain. It listens on port 58423 and provides RESTful endpoints to store and retrieve domain status information sent from specific tasks in our ansible playbooks. The service stores data in memory, with automatic cleanup of updates older than 48 hours, making it suitable for low-usage scenarios.
 
 ## Features
 
@@ -29,34 +29,27 @@ A lightweight Go-based HTTP server that tracks domain status updates. It listens
 
 2. Initialize a Go Module (if not already initialized):
 
-    `go mod init domain-status-service`
-
     ```
-    go: creating new go.mod: module domain-status-service
+    go mod init domain-status-service
     ```
     
-3. Install Dependencies:
-
-    `go get gopkg.in/yaml.v3`
+4. Install Dependencies:
 
     ```
-    go: downloading gopkg.in/yaml.v3 v3.0.1
-    go: added gopkg.in/yaml.v3 v3.0.1
+    go get gopkg.in/yaml.v3
     ```
 
-4. Go mod
+6. Go mod
 
-    `go mod tidy`
+    ```
+    go mod tidy
+    ```
 
-   ```
-   go: finding module for package gopkg.in/yaml.v3
-   go: found gopkg.in/yaml.v3 in gopkg.in/yaml.v3 v3.0.1
-   go: downloading gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405
-   ```
+8. Build and Run:
 
-6. Build and Run:
-
-    `go run main.go`
+    ```
+    go run main.go
+    ```
 
 The server will start on localhost:58423.
 Usage
@@ -106,12 +99,15 @@ GET /{domain}
 - Request:
     ```bash
     curl http://localhost:58423/example.com
-    Response (YAML):
     ```
+    
+- Response (YAML):
+       
     ```yaml
     - status: up
       timestamp: 2025-04-22T12:00:00Z
     ```
+
 Not Found:
 text
 Does Not Exist
