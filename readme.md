@@ -31,8 +31,9 @@ A lightweight Go-based HTTP server that tracks domain status updates. It listens
 
    ```bash
    go get gopkg.in/yaml.v3
-   Build and Run:
    ```
+   
+3. Build and Run:
 
    ```bash
    go run main.go
