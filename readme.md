@@ -23,7 +23,7 @@ A lightweight Go-based HTTP server that tracks domain status updates. It listens
 1. **Clone the Repository** (or copy the code to a directory):
 
    ``` bash
-   git clone <repository-url>
+   git clone git@github.com:sfeeser/bootwatch.git
    cd domain-status-service
    ```
 
