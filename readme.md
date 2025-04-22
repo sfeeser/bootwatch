@@ -133,7 +133,7 @@ Errors:
       status: SEAN's message
     status_code: 200
   register: result
-  failed_when: result.status != 200
+  ignore_errors: true
 ```
 
 Data Management
