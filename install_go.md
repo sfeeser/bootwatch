@@ -40,7 +40,7 @@
 7. Remove the downloaded tarball:
 
    ```
-   rm go1.23.2.linux-amd64.tar.gz
+   rm go1.24.2.linux-amd64.tar.gz
    ```
    
 9. OPTIONAL: Create directories for your Go workspace:
