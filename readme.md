@@ -120,6 +120,8 @@ Errors:
 
 ### Ansible POST example
 
+> note the the status line should include the HOSTNAME
+
 ```yaml
 - name: Send POST request to update endpoint
   uri:
@@ -129,8 +131,8 @@ Errors:
       Content-Type: application/json
     body_format: json
     body:
-      domain: example.com
-      status: SEAN's message
+      domain: fe456064-4b80-4e6e-9db7-ff75c1a50ac2
+      status: bchd: Launch starting
   ignore_errors: true
 ```
 
