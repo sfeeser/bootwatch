@@ -48,7 +48,13 @@ A lightweight Go-based HTTP server that tracks domain status updates. It listens
 
     `go mod tidy`
 
-5. Build and Run:
+   ```
+   go: finding module for package gopkg.in/yaml.v3
+   go: found gopkg.in/yaml.v3 in gopkg.in/yaml.v3 v3.0.1
+   go: downloading gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405
+   ```
+
+6. Build and Run:
 
     `go run main.go`
 
