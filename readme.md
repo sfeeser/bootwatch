@@ -118,6 +118,24 @@ Errors:
 - 405: Non-GET requests.
 - 500: Internal server error.
 
+### Ansible POST example
+
+```
+- name: Send POST request to update endpoint
+  ansible.builtin.uri:
+    url: http://localhost:58423/update
+    method: POST
+    headers:
+      Content-Type: application/json
+    body_format: json
+    body:
+      domain: example.com
+      status: SEAN's message
+    status_code: 200
+  register: result
+  failed_when: result.status != 200
+```
+
 Data Management
 - Storage: In-memory, using a thread-safe map.
 - Cleanup: Every hour, updates older than 48 hours are removed. Check server logs for "Cleanup completed" messages.
