@@ -24,7 +24,7 @@ A lightweight Go-based HTTP server that tracks domain status updates. It listens
 
    ``` bash
    git clone git@github.com:sfeeser/bootwatch.git
-   cd domain-status-service
+   cd bootwatch
    ```
 
 2. Install Dependencies:
