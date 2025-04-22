@@ -27,17 +27,30 @@ A lightweight Go-based HTTP server that tracks domain status updates. It listens
    cd bootwatch
    ```
 
-2. Install Dependencies:
+2. Initialize a Go Module (if not already initialized):
 
-   ```bash
-   go get gopkg.in/yaml.v3
-   ```
-   
-3. Build and Run:
+    `go mod init domain-status-service`
 
-   ```bash
-   go run main.go
-   ```
+    ```
+    go: creating new go.mod: module domain-status-service
+    ```
+    
+3. Install Dependencies:
+
+    `go get gopkg.in/yaml.v3`
+
+    ```
+    go: downloading gopkg.in/yaml.v3 v3.0.1
+    go: added gopkg.in/yaml.v3 v3.0.1
+    ```
+
+4. Go mod
+
+    `go mod tidy`
+
+5. Build and Run:
+
+    `go run main.go`
 
 The server will start on localhost:58423.
 Usage
