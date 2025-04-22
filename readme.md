@@ -1,6 +1,6 @@
 # Bootwatch
 
-A lightweight Go-based HTTP server that tracks playbook status updates by comain. It listens on port 58423 and provides RESTful endpoints to store and retrieve domain status information sent from specific tasks in our ansible playbooks. The service stores data in memory, with automatic cleanup of updates older than 48 hours, making it suitable for low-usage scenarios.
+A lightweight Go-based HTTP server that tracks playbook status updates by domain. It listens on port 58423 and provides RESTful endpoints to store and retrieve domain status information sent from specific tasks in our ansible playbooks. The service stores data in memory, with automatic cleanup of updates older than 48 hours, making it suitable for low-usage scenarios.
 
 ## Features
 
