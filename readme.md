@@ -122,7 +122,7 @@ Errors:
 
 ```
 - name: Send POST request to update endpoint
-  ansible.builtin.uri:
+  uri:
     url: http://localhost:58423/update
     method: POST
     headers:
